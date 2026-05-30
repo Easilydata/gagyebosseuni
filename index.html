@@ -4,61 +4,87 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>가계부쓰니</title>
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8fafc;color:#334155}
-    header{background:linear-gradient(135deg,#2563eb,#60a5fa);color:white;padding:80px 24px;text-align:center}
-    header h1{font-size:44px;margin:0 0 14px}
-    header p{font-size:18px;margin:0;opacity:.95}
-    main{max-width:960px;margin:0 auto;padding:48px 24px}
-    section{background:white;border:1px solid #e2e8f0;border-radius:24px;padding:32px;margin-bottom:24px}
-    h2{margin-top:0;color:#1e293b}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-    .card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:18px;padding:20px}
-    .card strong{display:block;margin-bottom:8px;color:#2563eb}
-    a{color:#2563eb;font-weight:700;text-decoration:none}
-    footer{text-align:center;color:#64748b;padding:32px 24px;font-size:14px}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
+  <header class="hero">
     <h1>가계부쓰니</h1>
-    <p>수입과 지출을 쉽고 간편하게 기록하는 개인 가계부 앱</p>
+    <p>수입과 지출을 쉽고 간편하게 기록하고, 소비 흐름까지 한눈에 확인하는 개인 가계부 앱입니다.</p>
   </header>
 
+  <nav class="nav">
+    <div class="tabs">
+      <a href="#service">서비스 소개</a>
+      <a href="#features">주요 기능</a>
+      <a href="#screens">화면 미리보기</a>
+      <a href="#data">데이터 처리</a>
+      <a href="#privacy">개인정보처리방침</a>
+      <a href="#contact">문의</a>
+    </div>
+  </nav>
+
   <main>
-    <section>
+    <section id="service">
       <h2>서비스 소개</h2>
       <p>
-        가계부쓰니는 사용자가 수입과 지출을 간편하게 기록하고,
-        소비 흐름과 현금 흐름을 확인할 수 있도록 돕는 개인 가계부 앱입니다.
+        가계부쓰니는 사용자가 직접 입력한 수입과 지출 데이터를 기반으로 월간 가계 흐름을 정리하고,
+        분석 리포트를 통해 소비 패턴을 이해할 수 있도록 돕는 모바일 가계부 앱입니다.
       </p>
+      <p>별도 회원가입 없이 사용할 수 있으며, 데이터는 기본적으로 사용자 기기 내부에 저장됩니다.</p>
     </section>
 
-    <section>
+    <section id="features">
       <h2>주요 기능</h2>
       <div class="grid">
-        <div class="card"><strong>수입·지출 관리</strong>거래 내역을 날짜와 카테고리 기준으로 기록하고 관리합니다.</div>
-        <div class="card"><strong>고정 수입·지출</strong>매월 반복되는 수입과 지출을 자동으로 반영합니다.</div>
-        <div class="card"><strong>분석 리포트</strong>현금 흐름, 저축률, 소비 TOP, 최근 지출 추이를 확인합니다.</div>
+        <div class="card"><strong>수입·지출 관리</strong>수입과 지출 내역을 날짜, 금액, 항목명, 카테고리 기준으로 기록합니다.</div>
+        <div class="card"><strong>고정 수입·지출 설정</strong>월급, 생활비, 구독료처럼 반복되는 거래를 자동으로 반영합니다.</div>
+        <div class="card"><strong>분석 리포트</strong>현금 흐름, 저축률, 소비 TOP, 최근 6개월 지출 트렌드를 제공합니다.</div>
+        <div class="card"><strong>카테고리 설정</strong>수입/지출 카테고리 이름을 사용자가 원하는 방식으로 변경할 수 있습니다.</div>
+        <div class="card"><strong>시작일 설정</strong>월급일 기준처럼 사용자별 소비 기간을 직접 설정할 수 있습니다.</div>
         <div class="card"><strong>데이터 백업·복원</strong>앱 데이터를 백업 파일로 저장하고 필요할 때 복원할 수 있습니다.</div>
       </div>
     </section>
 
-    <section>
-      <h2>데이터 처리 방식</h2>
-      <p>
-        가계부쓰니는 별도의 회원가입이나 외부 서버를 사용하지 않습니다.
-        사용자가 입력한 데이터는 기본적으로 사용자의 기기 내부에 저장됩니다.
-      </p>
-      <p><a href="privacy.html">개인정보처리방침 보기</a></p>
+    <section id="screens">
+      <h2>화면 미리보기</h2>
+      <div class="screens">
+        <div class="phone"><img src="assets/screen-home.png" alt="가계부 메인 화면"><span>메인 화면</span></div>
+        <div class="phone"><img src="assets/screen-settings.png" alt="설정 화면"><span>설정</span></div>
+        <div class="phone"><img src="assets/screen-analysis.png" alt="분석 리포트 화면"><span>분석 리포트</span></div>
+        <div class="phone"><img src="assets/screen-income.png" alt="수입 리포트 화면"><span>수입 리포트</span></div>
+        <div class="phone"><img src="assets/screen-expense.png" alt="지출 리포트 화면"><span>지출 리포트</span></div>
+      </div>
     </section>
 
-    <section>
+    <section id="data">
+      <h2>데이터 처리 방식</h2>
+      <p>
+        가계부쓰니는 현재 별도의 외부 서버를 사용하지 않습니다.
+        사용자가 입력한 수입, 지출, 카테고리, 설정 데이터는 사용자 기기 내부에 저장됩니다.
+      </p>
+      <p>앱 개발자는 사용자가 입력한 가계부 데이터에 접근하지 않습니다.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>개인정보처리방침</h2>
+      <p>가계부쓰니의 개인정보 처리 기준은 아래 페이지에서 확인할 수 있습니다.</p>
+      <div class="cta">
+        <a class="btn" href="privacy.html">개인정보처리방침 보기</a>
+      </div>
+    </section>
+
+    <section id="contact">
       <h2>문의</h2>
-      <p>서비스 관련 문의: <a href="mailto:data.jjy@gmail.com">data.jjy@gmail.com</a></p>
+      <p>서비스 관련 문의는 아래 이메일로 연락해 주세요.</p>
+      <div class="cta">
+        <a class="btn secondary" href="mailto:easilydata@naver.com">easilydata@naver.com</a>
+      </div>
     </section>
   </main>
 
-  <footer>© 2026 가계부쓰니. All rights reserved.</footer>
+  <footer>
+    © 2026 가계부쓰니. All rights reserved.
+  </footer>
 </body>
 </html>
