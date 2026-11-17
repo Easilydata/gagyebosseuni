@@ -3,90 +3,130 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>가계부쓰니</title>
+  <title>가계부쓰니 — 서버 없이 내 폰에만 저장하는 가계부</title>
+  <meta name="description" content="회원가입도 서버도 없습니다. 수입과 지출, 분석 리포트까지 내 폰 안에만 저장하는 Android 가계부 앱, 가계부쓰니." />
+  <meta name="theme-color" content="#6366F1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="가계부쓰니 — 서버 없이 내 폰에만 저장하는 가계부" />
+  <meta property="og:description" content="회원가입 없음, 서버 없음. 가계부 데이터는 내 폰에만 저장됩니다." />
+  <meta property="og:image" content="https://easilydata.github.io/gagyebosseuni/assets/icon.png" />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-subset.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="hero">
-    <h1>가계부쓰니</h1>
-    <p>수입과 지출을 쉽고 간편하게 기록하고, 소비 흐름까지 한눈에 확인하는 개인 가계부 앱입니다.</p>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="30" height="30" />가계부쓰니</a>
+      <nav aria-label="주요 링크">
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="#contact">문의</a>
+      </nav>
+    </div>
   </header>
 
-  <nav class="nav">
-    <div class="tabs">
-      <a href="#service">서비스 소개</a>
-      <a href="#features">주요 기능</a>
-      <a href="#screens">화면 미리보기</a>
-      <a href="#data">데이터 처리</a>
-      <a href="#privacy">개인정보처리방침</a>
-      <a href="#contact">문의</a>
+  <main id="main">
+    <div class="hero">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="eyebrow">Android 가계부 앱</p>
+          <h1 aria-label="ㄱㄱㅂ ㅆㄴ?"><span>ㄱㄱㅂ</span><span>ㅆㄴ?</span></h1>
+          <p class="lead">가계부 쓰니?<br />오늘 쓴 돈, 적어 둘래요.</p>
+          <p class="sub">수입과 지출을 적고, 한 달 흐름을 리포트로 봅니다. 회원가입은 없고, 데이터는 내 폰에만 있어요.</p>
+
+          <div class="btns">
+            <a class="btn" href="https://play.google.com/apps/testing/com.jjujjo.accountbook">테스터로 참여하기</a>
+            <a class="btn ghost" href="#privacy-first">서버가 없다는 말</a>
+          </div>
+          <p class="note">지금은 비공개 테스트 중이에요.</p>
+          <!-- 공개 출시 후 활성화
+          <div class="btns"><a class="btn" href="#PLAY_STORE_URL_PLACEHOLDER">Google Play에서 설치</a></div>
+          -->
+        </div>
+        <div class="hero-shot">
+          <div class="phone"><img src="assets/screen-home.png" alt="가계부쓰니 홈 화면. 이번 달 수입과 지출 내역이 보입니다." width="648" height="1404" /></div>
+        </div>
+      </div>
     </div>
-  </nav>
 
-  <main>
-    <section id="service">
-      <h2>서비스 소개</h2>
-      <p>
-        가계부쓰니는 사용자가 직접 입력한 수입과 지출 데이터를 기반으로 월간 가계 흐름을 정리하고,
-        분석 리포트를 통해 소비 패턴을 이해할 수 있도록 돕는 모바일 가계부 앱입니다.
-      </p>
-      <p>별도 회원가입 없이 사용할 수 있으며, 데이터는 기본적으로 사용자 기기 내부에 저장됩니다.</p>
-    </section>
-
-    <section id="features">
-      <h2>주요 기능</h2>
-      <div class="grid">
-        <div class="card"><strong>수입·지출 관리</strong>수입과 지출 내역을 날짜, 금액, 항목명, 카테고리 기준으로 기록합니다.</div>
-        <div class="card"><strong>고정 수입·지출 설정</strong>월급, 생활비, 구독료처럼 반복되는 거래를 자동으로 반영합니다.</div>
-        <div class="card"><strong>분석 리포트</strong>현금 흐름, 저축률, 소비 TOP, 최근 6개월 지출 트렌드를 제공합니다.</div>
-        <div class="card"><strong>카테고리 설정</strong>수입/지출 카테고리 이름을 사용자가 원하는 방식으로 변경할 수 있습니다.</div>
-        <div class="card"><strong>시작일 설정</strong>월급일 기준처럼 사용자별 소비 기간을 직접 설정할 수 있습니다.</div>
-        <div class="card"><strong>데이터 백업·복원</strong>앱 데이터를 백업 파일로 저장하고 필요할 때 복원할 수 있습니다.</div>
+    <section class="what" id="features">
+      <div class="wrap">
+        <div class="what-head">
+          <p class="kicker">하는 일</p>
+          <h2>적고,<br />모아서,<br />봅니다.</h2>
+        </div>
+        <ol class="rows">
+          <li><span class="n">01</span><h3>수입·지출 기록</h3><p>날짜, 금액, 항목명, 카테고리. 필요한 것만 적습니다.</p></li>
+          <li><span class="n">02</span><h3>고정 수입·지출</h3><p>월급, 생활비, 구독료처럼 매달 반복되는 건 알아서 반영돼요.</p></li>
+          <li><span class="n">03</span><h3>분석 리포트</h3><p>현금 흐름, 저축률, 소비 TOP, 최근 6개월 지출 트렌드를 보여 줍니다.</p></li>
+          <li><span class="n">04</span><h3>카테고리 이름 변경</h3><p>수입·지출 카테고리 이름을 내 방식대로 바꿀 수 있어요.</p></li>
+          <li><span class="n">05</span><h3>월 시작일 설정</h3><p>월급일 기준처럼 내 한 달이 시작되는 날을 직접 정합니다.</p></li>
+          <li><span class="n">06</span><h3>백업·복원</h3><p>데이터를 파일로 저장해 두었다가 필요할 때 복원합니다.</p></li>
+        </ol>
       </div>
     </section>
 
-    <section id="screens">
-      <h2>화면 미리보기</h2>
-      <div class="screens">
-        <div class="phone"><img src="assets/screen-home.png" alt="가계부 메인 화면"><span>메인 화면</span></div>
-        <div class="phone"><img src="assets/screen-settings.png" alt="설정 화면"><span>설정</span></div>
-        <div class="phone"><img src="assets/screen-analysis.png" alt="분석 리포트 화면"><span>분석 리포트</span></div>
-        <div class="phone"><img src="assets/screen-income.png" alt="수입 리포트 화면"><span>수입 리포트</span></div>
-        <div class="phone"><img src="assets/screen-expense.png" alt="지출 리포트 화면"><span>지출 리포트</span></div>
+    <section class="band-lilac" id="screens" aria-labelledby="screens-title">
+      <div class="wrap shots-head">
+        <p class="kicker">화면</p>
+        <h2 id="screens-title">이렇게 생겼어요.</h2>
+      </div>
+      <ul class="shots" tabindex="0" aria-label="앱 화면 목록, 좌우로 스크롤">
+        <li><figure><div class="frame"><img src="assets/screen-home.png" alt="홈 화면" loading="lazy" width="648" height="1404" /></div><figcaption><b>홈</b>한 달 내역을 한 화면에서.</figcaption></figure></li>
+        <li><figure><div class="frame"><img src="assets/screen-analysis.png" alt="분석 리포트 화면" loading="lazy" width="648" height="1404" /></div><figcaption><b>분석 리포트</b>현금 흐름과 저축률.</figcaption></figure></li>
+        <li><figure><div class="frame"><img src="assets/screen-income.png" alt="수입 리포트 화면" loading="lazy" width="648" height="1404" /></div><figcaption><b>수입 리포트</b>들어온 돈을 따로 봅니다.</figcaption></figure></li>
+        <li><figure><div class="frame"><img src="assets/screen-expense.png" alt="지출 리포트 화면" loading="lazy" width="648" height="1404" /></div><figcaption><b>지출 리포트</b>어디에 썼는지 순서대로.</figcaption></figure></li>
+        <li><figure><div class="frame"><img src="assets/screen-settings.png" alt="설정 화면" loading="lazy" width="648" height="1404" /></div><figcaption><b>설정</b>카테고리, 시작일, 백업.</figcaption></figure></li>
+      </ul>
+      <p class="shots-hint">옆으로 밀어서 더 보기</p>
+    </section>
+
+    <section class="on-indigo" id="privacy-first" aria-labelledby="privacy-title">
+      <div class="wrap">
+        <p class="kicker">데이터는 어디에?</p>
+        <h2 id="privacy-title" class="privacy-big"><span>서버 없음.</span><span>가입 없음.</span><span>내 폰에만.</span></h2>
+        <p class="fine">가계부쓰니는 외부 서버를 쓰지 않아요. 적은 내용은 기기 안에 저장되고, 개발자는 가계부 데이터에 접근하지 않습니다.</p>
+        <a class="link" href="privacy.html">개인정보처리방침 읽기</a>
       </div>
     </section>
 
-    <section id="data">
-      <h2>데이터 처리 방식</h2>
-      <p>
-        가계부쓰니는 현재 별도의 외부 서버를 사용하지 않습니다.
-        사용자가 입력한 수입, 지출, 카테고리, 설정 데이터는 사용자 기기 내부에 저장됩니다.
-      </p>
-      <p>앱 개발자는 사용자가 입력한 가계부 데이터에 접근하지 않습니다.</p>
-    </section>
+    <section class="join" id="join">
+      <div class="wrap grid2">
+        <div>
+          <p class="kicker">테스트 참여</p>
+          <h2>같이 써 보실래요?</h2>
+          <p>지금은 비공개 테스트 중입니다. 써 보시고 불편한 점을 알려 주시면 큰 도움이 돼요.</p>
+          <p class="note">초대된 구글 계정만 참여할 수 있어요. 참여를 원하시면 메일로 구글 계정 주소를 알려 주세요.</p>
+          <div class="btns">
+            <a class="btn" href="https://play.google.com/apps/testing/com.jjujjo.accountbook">테스터로 참여하기</a>
+            <a class="btn ghost" href="mailto:data.jjy@gmail.com?subject=%EA%B0%80%EA%B3%84%EB%B6%80%EC%93%B0%EB%8B%88%20%ED%94%BC%EB%93%9C%EB%B0%B1">피드백 남기기</a>
+          </div>
+          <!-- 공개 출시 후 활성화
+          <div class="btns"><a class="btn" href="#PLAY_STORE_URL_PLACEHOLDER">Google Play에서 설치</a></div>
+          -->
+        </div>
 
-    <section id="privacy">
-      <h2>개인정보처리방침</h2>
-      <p>가계부쓰니의 개인정보 처리 기준은 아래 페이지에서 확인할 수 있습니다.</p>
-      <div class="cta">
-        <a class="btn" href="privacy.html">개인정보처리방침 보기</a>
+        <div class="contact" id="contact">
+          <h3>문의</h3>
+          <ul>
+            <li><small>이메일</small><a href="mailto:data.jjy@gmail.com">data.jjy@gmail.com</a></li>
+            <li><small>버그·기능 제안 (GitHub)</small><a href="https://github.com/Easilydata/gagyebosseuni/issues">GitHub Issues</a></li>
+          </ul>
+          <p class="warn">GitHub 게시글은 누구나 볼 수 있으니 가계부 내용이나 개인정보는 올리지 말아 주세요.</p>
+        </div>
       </div>
-    </section>
-
-    <section id="contact">
-      <h2>문의</h2>
-      <p>서비스 관련 문의는 아래 이메일로 연락해 주세요.</p>
-      <div class="cta">
-        <a class="btn secondary" href="mailto:data.jjy@gmail.com">data.jjy@gmail.com</a>
-        <a class="btn secondary" href="https://github.com/Easilydata/gagyebosseuni/issues">버그·기능 제안 (GitHub)</a>
-      </div>
-      <p>GitHub 게시글은 누구나 볼 수 있으니 가계부 내용이나 개인정보는 올리지 말아 주세요.</p>
     </section>
   </main>
 
   <footer>
-    © 2026 가계부쓰니. All rights reserved.
+    <div class="wrap">
+      <span>© 2026 가계부쓰니.</span>
+      <a href="privacy.html">개인정보처리방침</a>
+    </div>
   </footer>
 </body>
 </html>
