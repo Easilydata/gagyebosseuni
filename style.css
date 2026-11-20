@@ -182,3 +182,12 @@ footer a { text-underline-offset: 3px; }
   html { scroll-behavior: auto; }
   * { transition: none !important; animation: none !important; }
 }
+
+/* 테스트 참여 3단계 */
+.join .steps { list-style: none; margin: 20px 0 8px; padding: 0; counter-reset: step; max-width: 30em; }
+.join .steps li { display: grid; gap: 8px; justify-items: start; padding: 18px 0; border-top: 1px solid var(--line); }
+.join .steps li:last-child { border-bottom: 1px solid var(--line); }
+.join .steps strong { font-size: 19px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
+.join .steps span { color: var(--ink-soft); }
+.join .steps .note { margin: 0; }
+.join .note { margin: 0 0 14px; max-width: 30em; }
