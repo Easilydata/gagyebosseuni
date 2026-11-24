@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>가계부쓰니 — 서버 없이 내 폰에만 저장하는 가계부</title>
-  <meta name="description" content="회원가입도 서버도 없습니다. 수입과 지출, 분석 리포트까지 내 폰 안에만 저장하는 Android 가계부 앱, 가계부쓰니." />
+  <title>가계부쓰니 – 월급일 기준 가계부, 내 폰에만 저장</title>
+  <meta name="description" content="회원가입 없이 쓰는 Android 가계부. 월급일을 한 달의 시작일로 정하고, 고정 수입·지출 자동 반영, 지출 분석 리포트까지. 데이터는 내 폰에만 저장돼요." />
   <meta name="theme-color" content="#6366F1" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="가계부쓰니 — 서버 없이 내 폰에만 저장하는 가계부" />
@@ -68,7 +68,7 @@
         <ol class="rows">
           <li><span class="n">01</span><h3>수입·지출 기록</h3><p>날짜, 금액, 항목명, 카테고리. 필요한 것만 적습니다.</p></li>
           <li><span class="n">02</span><h3>고정 수입·지출</h3><p>월급, 생활비, 구독료처럼 매달 반복되는 건 알아서 반영돼요.</p></li>
-          <li><span class="n">03</span><h3>분석 리포트</h3><p>지난 기간 같은 시점과의 비교, 카테고리별 변화, 지출 속도, 저축 현황을 보여 줍니다.</p></li>
+          <li><span class="n">03</span><h3>분석 리포트</h3><p>지난 기간 같은 시점과의 비교, 카테고리별 변화, 지출 속도, 저축 현황, 저축을 뺀 지출 TOP 3와 3·6개월 추세를 보여 줍니다.</p></li>
           <li><span class="n">04</span><h3>카테고리 이름 변경</h3><p>수입·지출 카테고리 이름을 내 방식대로 바꿀 수 있어요.</p></li>
           <li><span class="n">05</span><h3>월 시작일 설정</h3><p>월급일 기준처럼 내 한 달이 시작되는 날을 직접 정합니다.</p></li>
           <li><span class="n">06</span><h3>백업·복원</h3><p>데이터를 파일로 저장해 두었다가 필요할 때 복원합니다.</p></li>
@@ -84,6 +84,7 @@
       <ul class="shots" tabindex="0" aria-label="앱 화면 목록, 좌우로 스크롤">
         <li><figure><div class="frame"><img src="assets/screen-home.png?v=20261120" alt="홈 화면. 11월 기간 요약과 거래 목록" loading="lazy" width="648" height="1256" /></div><figcaption><b>홈</b>한 달 내역을 한 화면에서.</figcaption></figure></li>
         <li><figure><div class="frame"><img src="assets/screen-analysis.png?v=20261120" alt="분석 리포트 화면. 저축을 제외한 지출 인사이트, 지난 기간 같은 시점 대비, 카테고리별 변화" loading="lazy" width="648" height="1256" /></div><figcaption><b>분석 리포트</b>같은 시점끼리 비교해서.</figcaption></figure></li>
+          <li><figure><div class="frame"><img src="assets/screen-analysis-chart.png?v=20261124" alt="분석 리포트 아래쪽. 저축 카드, 저축 제외 지출 TOP 3, 최근 6개월 수입·지출 막대 차트" loading="lazy" width="648" height="1256" /></div><figcaption><b>분석 리포트 (아래)</b>지출 TOP 3와 6개월 추세.</figcaption></figure></li>
         <li><figure><div class="frame"><img src="assets/screen-income.png?v=20261120" alt="수입 리포트 화면. 카테고리별 수입 비율 도넛 차트와 급여·부수입 목록" loading="lazy" width="648" height="1256" /></div><figcaption><b>수입 리포트</b>들어온 돈을 따로 봅니다.</figcaption></figure></li>
         <li><figure><div class="frame"><img src="assets/screen-expense.png?v=20261120" alt="지출 리포트 화면. 카테고리별 지출 비율 도넛 차트와 카테고리 목록" loading="lazy" width="648" height="1256" /></div><figcaption><b>지출 리포트</b>어디에 썼는지 순서대로.</figcaption></figure></li>
         <li><figure><div class="frame"><img src="assets/screen-settings.png?v=20261120" alt="설정 화면. 이름 변경, 카테고리 이름 변경, 시작일 설정, 고정 수입·지출, 화면 테마, 데이터 백업·복원" loading="lazy" width="648" height="1256" /></div><figcaption><b>설정</b>이름, 카테고리, 시작일, 테마, 백업.</figcaption></figure></li>
@@ -143,7 +144,6 @@
           <h3>문의</h3>
           <ul>
             <li><small>문의·피드백 (로그인 없이)</small><a href="https://forms.gle/kwSeSTyUBrzv3Lng6">문의 폼 열기</a></li>
-            <li><small>이메일</small><a href="mailto:data.jjy@gmail.com">data.jjy@gmail.com</a></li>
           </ul>
           <p class="warn">가계부 내용이나 금액 같은 개인정보는 적지 않으셔도 됩니다.</p>
         </div>
